@@ -1,0 +1,5 @@
+resources:
+  - ./postgres
+  - ./odoo
+  - ./pgadmin 
+  - ./ic-webapp
