@@ -1,12 +1,12 @@
 ARG version="3.6-alpine"
 FROM python
-LABEL maintainer="FBOMLB78"
+LABEL maintainer="frederic-bougrier"
 
 WORKDIR /opt/
 RUN apt-get update \
     && apt-get install --no-install-recommends -y git \
     #&& git clone https://github.com/eazytraining/projet-fils-rouge.git /opt/ \
-    && git clone https://github.com/fbomlb/projet-fil-rouge.git /opt/ \
+    && git clone https://github.com/frederic-bougrier/projet-fil-rouge.git /opt/ \
     && apt-get clean \
     && rm -rf /var/lib/apt/list/* \
     && rm -rf jenkins-tools releases-txt README.md *pdf \
