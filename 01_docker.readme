@@ -3,6 +3,8 @@ IP serveur AWS Ubuntu : 52.47.157.242
 
   cd ~/projet-fil-rouge/01_docker/build.app
   docker build -t ic-webapp:1.0 .
+
+  # Ne pas faire run si compose par la suite
   docker run --rm -dp 8080:8080 --name test-ic-webapp ic-webapp:1.0
 
   Vérifier l’URL : http://15.188.145.200:8080

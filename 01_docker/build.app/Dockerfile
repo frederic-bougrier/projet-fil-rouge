@@ -1,4 +1,5 @@
-ARG version="3.6-alpine"
+#ARG version="3.6-alpine"
+ARG version="alpine:lts"
 FROM python
 LABEL maintainer="frederic-bougrier"
 
